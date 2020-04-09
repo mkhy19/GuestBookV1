@@ -1,0 +1,80 @@
+.App {
+  font-family: sans-serif;
+}
+
+h1 {
+  text-align: center;
+} 
+
+.signInUp{
+  text-align: center;
+  list-style-type: none;
+  /* background: rgb(70, 153, 179); */
+  overflow-x:hidden;
+  white-space:nowrap;
+}
+.signLists{
+  display:inline;
+  padding: 20px;
+  font-size: 30px;  
+  color: #000;
+  font-weight: bold;
+}
+
+.signUpAcount{
+  text-decoration: none;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  display: inline-block;
+}
+
+form {
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+label,
+input {
+  display: block;
+  width: 100%;
+}
+
+label {
+  margin-bottom: 5px;
+  height: 22px;
+}
+
+input {
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 3px;
+  border: 1px solid #777;
+}
+
+input.error {
+  border-color: red;
+}
+
+.input-feedback {
+  color: rgb(235, 54, 54);
+  margin-top: -15px;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: rgb(70, 153, 179);
+  color: white;
+  border: 1px solid rgb(70, 153, 179);
+  background-color: 250ms;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: white;
+  color: rgb(70, 153, 179);
+} 
