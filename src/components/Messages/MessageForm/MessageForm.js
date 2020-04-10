@@ -1,11 +1,11 @@
 import React from 'react';
-import './MessageForm'
+import './MessageForm.css'
 
 const MessageForm = (props) => {
     return (
         <form onSubmit={props.addMessage}>
-            <input className="messageInput" type="text" value={props.currentValue} onChange={props.updateMessage} />
-            <button className="messageButton" type="submit">Add Message</button>
+            <input className="messageInput" placeholder="Enter your new message" type="text" value={props.currentValue} onChange={props.updateMessage} />
+            <button className="messageButton" type="submit">Add New Message</button>
         </form>
     )
 }

@@ -51,7 +51,6 @@ export default class MessageDashboard extends Component {
         this.setState({messages})
     }
 
-
     render() {
         //const messages = this.state.messages;
         const {messages} = this.state;

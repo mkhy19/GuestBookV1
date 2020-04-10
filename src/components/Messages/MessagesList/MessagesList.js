@@ -1,5 +1,5 @@
 import React , {Component, Fragment} from 'react';
-import './MessagesList'
+import './MessagesList.css'
 
 class MessagesList extends Component{
     state = {
@@ -9,11 +9,13 @@ class MessagesList extends Component{
     //Render message 
     renderMessagesList = () => {
         return (
-            <li>
-                <span>{this.props.messageData.name}</span>
-                <button onClick={() => {this.toggelState()}}>Edit</button>
-                <button onClick={() => {this.props.deleteMessage(this.props.idx)}}>Delete</button>
-            </li>
+            <ul>
+                <li>
+                    <span>{this.props.messageData.name}</span>
+                    <button onClick={() => {this.toggelState()}}>Edit</button>
+                    <button onClick={() => {this.props.deleteMessage(this.props.idx)}}>Delete</button>
+                </li>
+            </ul>
         )
     }
     
