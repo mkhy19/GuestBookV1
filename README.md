@@ -1,3 +1,20 @@
+
+# GuestBookV1
+
+First version- of chat app with basic features like log in, create an account, Send, Edit, Delete, Update messages and replay to messages too.
+
+## TL;DR
+To get started developing right away:
+* download or clone this repo: ```
+git clone https://github.com/mkhy19/GuestBookV1```
+
+* ```npm install```
+
+* ```npm start``` to start live preview via http://localhost:3000/ by default.
+* if you have an issue with this local host, You can change it first in package.json file then in bash use for example:                               
+```set PORT=2020``` or any 4 numbers and re-run the server again using ```npm start```
+  
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -36,34 +53,3 @@ If you aren’t satisfied with the build tool and configuration choices, you can
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
-"# GuestBookV1 ## First version of chat app with basic features like log in, create an account, Send, Edit, Delete, Update messages and replay to messages too " 
