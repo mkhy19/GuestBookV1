@@ -4,16 +4,18 @@ import React, { Component } from "react";
 import MessageForm from './MessageForm/MessageForm';
 import MessagesList from './MessagesList/MessagesList';
 
-import './MessageForm/MessageForm.css'
+import './MessagesList/MessagesList.css'
 export default class MessageDashboard extends Component {
 
     state = {
         messages: [
             {name: "Hi Ahmed"},
             {name: "Hi Aya !!"},
-            {name: "Hi Eslam!"}
+            {name: "Hi Eslam!"},
+            //{replay: ""}
         ],
-        current: ''
+        current: '',
+        currentReplay: '',
     }
 
     //Update message
@@ -51,17 +53,31 @@ export default class MessageDashboard extends Component {
         this.setState({messages})
     }
 
+    //Reply Message 
+    replyMessage = (index, replayText) => {
+        let currReplay = this.state.currentReplay
+        let messages = this.state.messages
+        let message = messages[index]
+        message['replay'] = replayText
+
+        this.setState({
+            //replayText,
+            messages,
+            currReplay
+        })
+    }
+
     render() {
         //const messages = this.state.messages;
         const {messages} = this.state;
 
         const messagelist = messages.map(( message, index) => {
-            return <MessagesList messageData={message} key={index} idx={index} deleteMessage={this.deleteMessage} editMessage={this.editMessage} />
+            return <MessagesList messageData={message} key={index} idx={index} deleteMessage={this.deleteMessage} editMessage={this.editMessage} replyMessage={this.replyMessage} />
         })
         
         return (
                 <section className="textCenter">
-                    <h2 className="textCenter">Simple Chat App</h2>
+                    <h2>Simple Chat App</h2>
                     <h3 ><mark>Be close to your friends and Send Messages</mark></h3>           
                     <MessageForm currentValue={this.state.current} updateMessage={this.updateMessage} addMessage={this.addMessage}  />
                     { this.state.messages.length  > 0 ? <ul >{messagelist}</ul> : <p>There is no message to show</p> }

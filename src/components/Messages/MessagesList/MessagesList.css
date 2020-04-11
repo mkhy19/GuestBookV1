@@ -1,27 +1,47 @@
-ul{
+.textCenter{
+    text-align: center;
+    margin: auto;
+    width: 80%;
+    border: 3px solid rgb(0, 0, 0);
+    padding: 10px;
+}
+
+
+.list-inline{
     list-style: none;
     padding: 0;
+    display: inline;
 }
   
-li{
-    margin: 10px 0;
-}
-  
+
 li span{
     display: inline-block;
-    width: 60%;
-    color: rgb(82, 19, 19);
+    color: rgb(241, 11, 11);
+    padding: 16px 10px;
+    margin-right: 12px;
+    
 }
   
-li > button:first-of-type{
+.editButton{
     background: #6a6a;
     color: #fff;
-    width: 19%;
-    margin: 2%;
+    width: 11%;
+    margin-right: 2%;  
 }
-  
-li > button:last-of-type{
+
+.deleteButton{
     background: #d9534f;
-    color: #fff;
+    color: #fff; 
+    width: 11%;
+    margin-right: 2%;  
+
 }
- 
+
+.list-inline .replyButton{
+    background: #001bb3;
+    color: #fff; 
+    width: 24%; 
+    margin-right: 2%;
+    margin-top: 3px; 
+
+}
